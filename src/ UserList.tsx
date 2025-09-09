@@ -15,17 +15,11 @@ export default function () {
                 // handle error
                 console.log(error);
             })
-
-
     }
-
     useEffect(() => {
         manageData()
     }, [])
-
-
     return (<div className="flex flex-col gap-3 border-4 justify-center items-center h-screen">
-
         {listOfUSer.map(user => (
             <div key={user.id}>{user.name}</div>
         ))}

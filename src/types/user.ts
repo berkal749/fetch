@@ -1,4 +1,4 @@
-type user ={
+export type user ={
 
 
     id: number;
@@ -6,4 +6,3 @@ type user ={
     username: string;
     email: string;
 }
-export default user;
