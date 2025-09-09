@@ -1,5 +1,5 @@
 import axios from 'axios';
-import type user from './types/user';
+import type {user} from './types/user';
 
 import { useState, useEffect } from 'react';
 
