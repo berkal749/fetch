@@ -1,9 +1,10 @@
 import axios from 'axios';
+import type user from './types/user';
 
 import { useState, useEffect } from 'react';
 
 export default function () {
-    const [listOfUSer, setListOfUSer] = useState<string[]>([])
+    const [listOfUSer, setListOfUSer] = useState<user[]>([])
     function manageData() {
         axios.get('https://jsonplaceholder.typicode.com/users')
             .then(function (response) {
